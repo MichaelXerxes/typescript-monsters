@@ -11,7 +11,7 @@
     transform: translateZ(0);
     transition: transform 0.25s ease-out;
 
-    .name{
+    .nameB{
       border: '2px black';
       border-radius: '5px';
       color: 'red';
@@ -22,6 +22,6 @@
   .card-container:hover {
     transform: scale(1.05);
   }
-  .name:hover{
+  .nameB:hover{
     transition: scale(2.0);
   }
