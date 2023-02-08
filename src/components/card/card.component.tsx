@@ -1,20 +1,24 @@
 import { Monster } from '../../App';
 import './card.styles.scss';
 
+
 type CardProps={
     monster:Monster;
 }
-const Card=({monster}:CardProps)=>{
-    const{id,name,email}=monster;
+const Card=(monster:CardProps)=>{
+    
+    const onClickCard=()=>{};
 
     return (
         <div className="card-container">
             <img
-                alt={`monster ${name}`}
-                src={`https://robohash.org/${id}?set=set2&size=180x180`}
+                alt={`monster ${monster.monster.name}`}
+                src={`https://robohash.org/${monster.monster.id}?set=set2&size=180x180`}
                 />
-            <h2>{name}</h2>
-            <p>{email}</p>
+            <div className='name' role='button' onClick={onClickCard}
+               
+                >{monster.monster.name}</div >
+            <p>{monster.monster.email}</p>
         </div>
     );
 };

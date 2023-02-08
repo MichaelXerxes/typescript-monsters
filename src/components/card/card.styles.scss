@@ -10,8 +10,18 @@
     backface-visibility: hidden;
     transform: translateZ(0);
     transition: transform 0.25s ease-out;
+
+    .name{
+      border: '2px black';
+      border-radius: '5px';
+      color: 'red';
+      font-size: 2rem;
+    }
   }
   
   .card-container:hover {
     transform: scale(1.05);
+  }
+  .name:hover{
+    transition: scale(2.0);
   }
