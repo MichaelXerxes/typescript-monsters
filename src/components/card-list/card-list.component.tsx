@@ -1,4 +1,4 @@
-import { Monster } from "../../App";
+import { Monster } from "../../pages/monsters/monsters.component";
 import Card from "../card/card.component";
 import './card-list.styles.scss';
 

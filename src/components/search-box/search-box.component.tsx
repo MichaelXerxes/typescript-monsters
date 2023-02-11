@@ -1,5 +1,5 @@
 import { ChangeEventHandler, ChangeEvent } from "react";
-import { Monster } from "../../App";
+import { Monster } from "../../pages/monsters/monsters.component";
 import './search-box.styles.scss';
 interface ISearchBoxProps extends IChangeHandlerProps{
     className:string;

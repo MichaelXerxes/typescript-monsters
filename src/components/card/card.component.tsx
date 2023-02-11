@@ -1,4 +1,4 @@
-import { Monster } from '../../App';
+import { Monster } from '../../pages/monsters/monsters.component';
 import './card.styles.scss';
 import { useState } from 'react';
 
@@ -24,9 +24,7 @@ const Card=(monster:CardProps)=>{
                
                 >{monster.monster.name}</div >
             <p>{monster.monster.email}</p>
-            <p>{
-                 number
-                }</p>
+            <p>{ number }</p>
 
                 <button onClick={onClickCardName}
                 >Hello Button</button>
