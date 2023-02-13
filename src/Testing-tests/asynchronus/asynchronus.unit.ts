@@ -1,28 +1,4 @@
 
-export type Product={
-    discountPercentage?:string;
-    discountPrice?:string;
-    id:number;
-    price?:string;
-    quantity?:string;
-    title:string;
-    total?:string
-};
-export type CartWithProducts={
-    discountTotal?:string;
-    id:number;
-    products:Product[];
-    total?:string;
-    totalProducts?:string;
-    totalQuantity?:string;
-    userId?:number;
-
-}
- 
-export type DataF={
-    carts:CartWithProducts[];
-    
-};
 
 interface HttpResponse<T> extends Response{
     parseBody?:T;
